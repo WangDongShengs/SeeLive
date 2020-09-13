@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.wds.seelive"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+// Android Studio 4.0
+android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\29804\\AndroidStudioProjects\\studio\\SeeLive\\jiandao.jks')
+            storePassword '123456'
+            keyAlias 'key1'
+            keyPassword '123456'
+        }
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation deps.androidX.appcompat
+    implementation deps.androidX.constraintlayout
+    implementation deps.androidX.recyclerview
+    implementation deps.androidX.multidex
+
+
+
+    implementation deps.okhttp3X.okhttp3
+    implementation deps.okhttp3X.logging_interceptor
+
+
+    implementation deps.retrofitX.retrofit2
+    implementation deps.retrofitX.retrofit_converter_gson
+    implementation deps.retrofitX.retrofit2_adapter_rxjava3
+
+
+    implementation deps.rxJavaX.rxjava3
+    implementation deps.rxJavaX.rxAndroid3
+    implementation deps.rxJavaX.rxPermissions
+    implementation deps.retrofitX.retrofit2_rxjava_components4
+
+    implementation deps.glideX.glide
+    annotationProcessor deps.glideX.compiler
+
+
+
+    implementation deps.other.gifView
+    implementation deps.other.smartRefreshLayout
+    implementation deps.other.smartRefreshHeader
+    implementation 'me.codeboy.android:align-text-view:2.3.2'
+
+    implementation project(path: ':mvplib')
+    annotationProcessor project(path: ':mvplib:libMvpAnotation:compiler')
+    implementation 'com.m.k:system-ui:1.0.0-alpha01'
+
+    implementation project(path: ':bannerlib')
+
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.2@aar'
+    implementation 'me.jessyan:autosize:1.2.1'//屏幕适配
+    implementation 'com.shuyu:GSYVideoPlayer:7.1.5'
+
+    implementation project(path:':libvideo')
+    implementation project(path:':libumeng')
+}

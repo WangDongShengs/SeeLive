@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SeeLive</string>
+    <string name="text_error_default">加载失败，点击重试</string>
+    <string name="text_phone">请输入手机号</string>
+    <string name="text_password">请输入密码</string>
+    <string name="text_login">登录</string>
+    <string name="text_code">请输入验证码</string>
+    <string name="text_get_code">获取验证码</string>
+    <string name="text_register">下一步</string>
+    <string name="text_user_license">注册即是同意见道的用户协议和隐私政策</string>
+
+
+    <string name="text_service_agreement_content">尊敬的用户您好，请您在使用本软件之前，认真阅读、并充分理解“见道”软件许可及服务协议（以下简称“本协议”）及各条款内容，尤其需关注免除或者限制责任的条款，并确认是否接受。您可阅读   《服务协议》和《隐私政策》了解详细信息，如同意，请点击“同意”继续阅读，享受我们的服务</string>
+
+    <string name="text_service_agreement_title">服务协议和隐私政策</string>
+    <string name="text_service_agreement">《服务协议》</string>
+    <string name="text_service_privacy_policy">《隐私政策》</string>
+    <string name="text_stop_to_use">暂不使用</string>
+    <string name="text_agree">同意</string>
+    <string name="text_tab_recommend">推荐</string>
+    <string name="text_tab_video">视频</string>
+    <string name="text_tab_special">专栏</string>
+    <string name="text_tab_mine">我的</string>
+    <string name="text_write_comment">写评论</string>
+    <string name="text_detail_share">分享</string>
+    <string name="text_detail_you_may_be_want_to_look">您可能还想看</string>
+    <string name="text_detail_show_more_reply">查看更多回复</string>
+    <string name="text_comment_cancel">取消</string>
+    <string name="text_comment_send">发送</string>
+    <string name="text_REPLAY_HINT">回复：%1$s</string>
+    <string name="text_comment">评论</string>
+</resources>

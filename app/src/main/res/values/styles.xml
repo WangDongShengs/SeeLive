@@ -1,0 +1,67 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="JianDao" parent="AppTheme"/>
+    <!--窗口全屏    -->
+    <style name="JianDao.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--窗口背景-->
+    <style name="JianDao.FullScreen.Splash">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+    <!--下滑线-->
+    <style name="JianDao.horizontal_Line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background">@color/gray_3</item>
+
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+    </style>
+    <!--EditText -->
+    <style name="JianDao.EditInput">
+
+        <item name="android:layout_marginRight">45dp</item>
+        <item name="android:layout_marginStart">45dp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginEnd">45dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textColorHint">@color/gray_8</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/black_3</item>
+
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="JianDao.Button_style1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/login_button_rounder_bg_selector</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+    <style name="JianDao.NewsTitle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:lineSpacingExtra">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>
